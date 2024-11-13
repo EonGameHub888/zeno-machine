@@ -44,7 +44,7 @@ module.exports = (env, {
 
         output: {
             filename: PROD ? '[name].[contenthash].js' : '[name].[fullhash].js',
-            path: path.resolve(__dirname, 'dist'),
+            path: path.resolve(__dirname, 'public'),
             publicPath: './',
         },
 
@@ -93,7 +93,7 @@ module.exports = (env, {
             new ESLintPlugin({ fix: true }),
 
             new HtmlWebpackPlugin({
-                filename: path.resolve(__dirname, 'dist/index.html'),
+                filename: path.resolve(__dirname, 'public/index.html'),
                 template: path.resolve(__dirname, 'src/app/components/app/app.template.ejs'),
                 title: 'SlotJS \\ Circular slot machine mobile-first SPA built using JavaScript, CSS variables and Emojis!',
                 description: pkg.description,

@@ -63,15 +63,22 @@ export class SlotMachineReel {
         shuffle(symbols);
 
         symbols.forEach((symbol, symbolIndex) => {
-            const cellFigure = createElement(C_FIGURE, symbol);
+            const cellFigure = createElement(C_FIGURE);
+            const img = document.createElement('img');
+            img.src = symbol;
+            img.style.width = '100%'; // Set the width of the image
+            img.style.height = '100%'; // Set the height of the image
+            cellFigure.appendChild(img);
+            console.log('img.src: ', img.src);
             const cell = createElement(C_CELL, cellFigure, symbolIndex * alpha);
 
             root.appendChild(cell);
 
             for (let shadowIndex = 1; shadowIndex < shadowCount; ++shadowIndex) {
+                const shadowCellFigure = cellFigure.cloneNode(true);
                 root.appendChild(createElement(
                     cellShadowClasses,
-                    cellFigure.cloneNode(true),
+                    shadowCellFigure,
                     alpha * (symbolIndex + (beta * shadowIndex)),
                     `opacity: ${ shadowOpacityWeight * (1 - (beta * shadowIndex)) }; `,
                 ));

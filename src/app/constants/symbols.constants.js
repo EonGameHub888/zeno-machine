@@ -29,8 +29,8 @@ export const ALL_SYMBOLS = [
     // SYMBOLS_ANIMALS,
     // SYMBOLS_SPORTS,
     // SYMBOLS_LOVE,
-    // SYMBOLS_FORTUNE,
-    SYMBOLS_FOOD,
+    SYMBOLS_FORTUNE,
+    SYMBOLS_FOOD
 ];
 
 export const SYMBOLS_RANDOM = ALL_SYMBOLS[Math.random() * ALL_SYMBOLS.length | 0];

@@ -21,7 +21,8 @@ export const SYMBOLS_FORTUNE = [
     '🎴', '🎲', '🕶', '🥃', '💷', '💴', '💵', '💰', '🍀', '💎', '🎰', '🧞‍️', '🃏'];
 
 export const SYMBOLS_FOOD = [
-    'slot-icon/01.jpg', 'slot-icon/02.jpg', 'slot-icon/03.jpg',  , 'slot-icon/04.jpg', 'slot-icon/05.jpg', 'slot-icon/06.jpg' // '🍓', '🍭', '🍫', '🍩', '🍕', '🍗', '🥩', '🍣',
+    'slot-icon/01.jpg', 'slot-icon/02.jpg', 'slot-icon/03.jpg',  , 'slot-icon/04.jpg', 'slot-icon/05.jpg', 'slot-icon/06.jpg'
+     // '🍓', '🍭', '🍫', '🍩', '🍕', '🍗', '🥩', '🍣',
 ];
 
 export const ALL_SYMBOLS = [

@@ -14,12 +14,13 @@ export const SYMBOLS_SPORTS = [
     '🎯', '🎱', '🏐', '⛳', '⚾', '🏈', '🏀', '⚽', '🥉', '🥈', '🥇', '🏆'];
 
 export const SYMBOLS_LOVE = [
-    '💌', '🎁', '📸', '💘', '💋', '🔞', '💑', '💍', '💎', '💖'];
+    '💌', '🎁', '📸', '💘', '💋', '🔞', '💑', '💍', '💎', '💖',
+];
 
 export const SYMBOLS_FORTUNE = [
     '🎴', '🎲', '🕶', '🥃', '💷', '💴', '💵', '💰', '🍀', '💎', '🎰', '🧞‍️', '🃏'];
 
-export const SYMBOLS_FOOD = ['slot-icon/01.jpg', 'slot-icon/02.jpg', 'slot-icon/03.jpg', , 'slot-icon/04.jpg', 'slot-icon/05.jpg', 'slot-icon/06.jpg'];
+export const SYMBOLS_FOOD = ['slot-icon/01.jpg', 'slot-icon/02.jpg', 'slot-icon/03.jpg', 'slot-icon/04.jpg', 'slot-icon/05.jpg', 'slot-icon/06.jpg'];
 
 export const ALL_SYMBOLS = [
     // SYMBOLS_CLASSIC,
@@ -28,8 +29,8 @@ export const ALL_SYMBOLS = [
     // SYMBOLS_ANIMALS,
     // SYMBOLS_SPORTS,
     // SYMBOLS_LOVE,
-    SYMBOLS_FORTUNE,
-    SYMBOLS_FOOD
+    // SYMBOLS_FORTUNE,
+    SYMBOLS_FOOD,
 ];
 
 export const SYMBOLS_RANDOM = ALL_SYMBOLS[Math.random() * ALL_SYMBOLS.length | 0];
